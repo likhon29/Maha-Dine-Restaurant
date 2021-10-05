@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maha Dine</title>
+    <style>
+        body {
+            background-color: #94aec9;
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+            margin: 10px 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        li {
+            float: left;
+
+        }
+
+        img {
+            height: 350px;
+            width: 420px;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        li a {
+            display: block;
+            padding-left: 70px;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid rgb(7, 209, 182);
+            border-collapse: collapse;
+        }
+
+        table {
+            height: 500px;
+            width: 100%;
+            font-size: 25px;
+            text-align: center;
+            color: black;
+        }
+
+        tr:nth-child(even) {
+            background-color: #7ad1d1;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+
+        }
+
+        .container img {
+            filter: blur(3px);
+        }
+
+        .centered {
+            padding: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px solid whitesmoke;
+            font-size: 40px
+        }
+
+        #btn {
+            background-color: green;
+            width: 150px;
+            height: 50px;
+            color: honeydew;
+            font-size: 20px;
+        }
+
+       
+        footer {
+            margin-top: 50px;
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(230, 179, 162);
+  color: white;
+}
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <ul style="text-align: center;">
+                <li style="font: italic small-caps bold 20px/25px Georgia, serif;"><a href="#">
+                        <h1> <span style="color: tomato;">Maha Dine</span> <span
+                                style="color: whitesmoke;">Restaurant</span> </h1>
+                        <hr>
+                    </a> </li>
+                <!-- <li><a href="index.html">
+                        <h1>Home</h1>
+                    </a></li> -->
+                <li><a href="#Dishes">
+                        <h1>Food</h1>
+                    </a></li>
+                <li><a href="#MenuCard">
+                        <h1>MenuCard</h1>
+                    </a></li>
+                <li><a href="LabAssignment-1.html">
+                        <h1>Signup</h1>
+                    </a></li>
+                <li><a href="login.html">
+                        <h1>Login</h1>
+                    </a></li>
+            </ul>
+        </div>
+        <br>
+
+        <div class="container">
+            <img src="images/restaurant.jpg" alt="" style="width:90%; height: 600px;">
+
+            <div class="centered">
+                <h1>Are you a New Customer?</h1>
+                <button id="btn"><a href="LabAssignment-1.html">Signup</a></button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <br><br><br><br>
+
+    <div id="Dishes">
+        <h1 style="text-align: center;"><b>Food</b>
+            <hr>
+        </h1>
+        <img src="images/pasta.jpg" alt="">
+        <img src="images/pizza.jpg" alt="">
+        <img src="images/soup.jpg" alt="">
+        <img src="images/burger.jpg" alt="">
+        <img src="images/french fries.jpg" alt="">
+        <img src="images/fried chicken.jpg" alt="">
+        <img src="images/chaomin.jpg" alt="">
+        <img src="images/coffe.jpg" alt="">
+        <img src="images/sandwich.jpg" alt="">
+
+    </div>
+    <div id="MenuCard">
+        <table>
+            <caption>
+                <h1>Menu Card</h1>
+            </caption>
+            <tr>
+                <th>No</th>
+                <th>Item</th>
+                <th>Type</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td rowspan="3">1</td>
+                <td rowspan="3">Soup</td>
+                <td>Thai Chicken Soup</td>
+                <td>100/=</td>
+            </tr>
+            <tr>
+                <td>Chicken Corn Soup</td>
+                <td>80/=</td>
+            </tr>
+            <tr>
+                <td>Chicken Vegetable Soup</td>
+                <td>80/=</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3">2</td>
+                <td rowspan="3">Fry</td>
+                <td>Crispy Chicken Fry</td>
+                <td>100/=</td>
+            </tr>
+            <tr>
+                <td>Spicy Chicken Fry</td>
+                <td>130/=</td>
+            </tr>
+            <tr>
+                <td>French Fry</td>
+                <td>80/=</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3">3</td>
+                <td rowspan="3">Coffee</td>
+                <td>Hot Coffee</td>
+                <td>50/=</td>
+            </tr>
+            <tr>
+                <td>Cold Coffee</td>
+                <td>80/=</td>
+            </tr>
+            <tr>
+                <td>B-Jar Coffee</td>
+                <td>200/=</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3">4</td>
+                <td rowspan="3">Burger</td>
+                <td>Regular Chicken Burger</td>
+                <td>120/=</td>
+            </tr>
+            <tr>
+                <td>Chicken Cheese Attack Burger</td>
+                <td>160/=</td>
+            </tr>
+            <tr>
+                <td>Special Over Dose Burger</td>
+                <td>220/=</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3">5</td>
+                <td rowspan="3">Pizza</td>
+                <td>Italian Chicken Cheese Pizza 12"</td>
+                <td>400/=</td>
+            </tr>
+            <tr>
+                <td>Maha-Dine Special Pizza</td>
+                <td>500/=</td>
+            </tr>
+            <tr>
+                <td>Chicken Cheese Pizza</td>
+                <td>300/=</td>
+            </tr>
+            <tr>
+                <td rowspan="3">6</td>
+                <td rowspan="3">Pasta</td>
+                <td>Red Sauce Chicken Pasta</td>
+                <td>130/=</td>
+            </tr>
+            <tr>
+                <td>White Sauce Chicken Pasta</td>
+                <td>130/=</td>
+            </tr>
+            <tr>
+                <td>Maha-Dine Over Dose Pasta</td>
+                <td>150/=</td>
+            </tr>
+
+
+        </table>
+
+    </div>
+    </div>
+    
+    <footer>
+        
+        <a href="mahadinerestaurant2021.com">Email: mahadinerestaurant2021.com</a>
+        <p>© Maha Dine 2021, Own initiative.</p>
+      </footer>
+</body>
+
+</html>

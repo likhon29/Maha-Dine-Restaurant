@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maha Dine</title>
+    <style>
+        body {
+            background-image: url(images/restaurant1.jpg);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .centered {
+            position: absolute;
+            text-align: left;
+            background-color: rgb(161, 158, 158);
+            padding: 25px;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            
+        }
+
+
+        input[type=text],
+        input[type=password] {
+            width: 95%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+        a{
+            text-decoration: none;
+        }
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+    
+        .cancelbtn {
+            padding: 14px 20px;
+            background-color: #f44336;
+        }
+
+       
+        .cancelbtn,
+        .signupbtn {
+            float: left;
+            width: 50%;
+        }
+
+        /* Add padding to container elements */
+        .container {
+            padding: 16px;
+        }
+
+        
+        
+        .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+        /* Change styles for cancel button and signup button on extra small screens */
+        @media screen and (max-width: 300px) {
+
+            .cancelbtn,
+            .signupbtn {
+                width: 100%;
+            }
+        }
+  
+    </style>
+</head>
+
+<body>
+    <div>
+        <marquee width="90%" direction="left" height="400px"
+            style="font-size: 100px; padding: 20px; color: white;">
+            Welcome To Maha Dine Restaurant
+        </marquee>
+        <div class="container1">
+
+            <div class="centered">
+                <form action="index.html" style="border:1px solid #ccc">
+                    <div class="container">
+                        <h1 style="text-align: center;">Sign Up</h1>
+                        <p>Please fill in this form to create an account.</p>
+
+
+                        <label for="email"><b>Email </b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required><br>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required><br>
+
+                        <label for="psw-repeat"><b>Repeat Password</b></label>
+                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br>
+
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+                            Remember me
+                        </label>
+
+                        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms &
+                                Privacy</a>.</p>
+
+                        <div class="clearfix">
+                            <button type="button" class="cancelbtn">   <a href="login.html">Login</a>   </button>
+                            <button type="submit" class="signupbtn">Sign Up</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+    
+
+</body>
+
+</html>
